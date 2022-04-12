@@ -2,7 +2,7 @@
 
 *A logical, reasonably standardized, but flexible project structure for doing and sharing work. (based on [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/))*
 
-**INSERT NAMES AND GROUP NUMBER**
+**Afonso Fernandes, Duarte Correia, Miguel Milhazes - Grupo 5**
 
 This repository contains the base structure for Optimization and Decision project. In a near future, your thesis can also use this structure to make your work available for contributions from other authors. 
 
