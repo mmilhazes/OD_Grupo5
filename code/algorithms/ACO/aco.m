@@ -19,7 +19,7 @@ nAnt = 100;        % Number of Ants (Population Size)
 
 Q = 0.25;
 
-tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Phromone
+tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Pheromone
 
 alpha = 1;        % Phromone Exponential Weight
 beta = 5;         % Heuristic Exponential Weight
@@ -31,7 +31,7 @@ rho = 0.5;       % Evaporation Rate
 
 eta = 1./model.D;             % Heuristic Information Matrix
 
-tau = tau0*ones(nVar, nVar);   % Phromone Matrix
+tau = tau0*ones(nVar, nVar);   % Pheromone Matrix
 
 BestCost = zeros(MaxIt, 1);    % Array to Hold Best Cost Values
 
