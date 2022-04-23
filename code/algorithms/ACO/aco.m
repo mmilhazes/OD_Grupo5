@@ -21,10 +21,10 @@ Q = 0.25;
 
 tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Phromone
 
-alpha = 1;        % Phromone Exponential Weight
-beta = 5;         % Heuristic Exponential Weight
+alpha = 1;        % Phromone Exponential Weight  / alpha>0
+beta = 1;         % Heuristic Exponential Weight / beta<1
 
-rho = 0.5;       % Evaporation Rate
+rho = 0.5;       % Evaporation Rate / usualy 0.9
 
 
 %% Initialization
