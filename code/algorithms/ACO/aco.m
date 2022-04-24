@@ -17,11 +17,11 @@ MaxIt = 100;      % Maximum Number of Iterations
 
 nAnt = 100;        % Number of Ants (Population Size)
 
-Q = 0.25;
+Q = 0.25;          % Amount of pheromone added
 
 tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Phromone
 
-alpha = 1;        % Phromone Exponential Weight  / alpha>0
+alpha = 1;        % Pheromone Exponential Weight  / alpha>0
 beta = 1;         % Heuristic Exponential Weight / beta<1
 
 rho = 0.5;       % Evaporation Rate  / 0<rho<1
@@ -31,7 +31,7 @@ rho = 0.5;       % Evaporation Rate  / 0<rho<1
 
 eta = 1./model.D;             % Heuristic Information Matrix
 
-tau = tau0*ones(nVar, nVar);   % Phromone Matrix
+tau = tau0*ones(nVar, nVar);   % Pheromone Matrix
 
 BestCost = zeros(MaxIt, 1);    % Array to Hold Best Cost Values
 
@@ -79,7 +79,7 @@ for it = 1:MaxIt
         
     end
     
-    % Update Phromones
+    % Update Pheromones
     for k = 1:nAnt
         
         tour = ant(k).Tour;
