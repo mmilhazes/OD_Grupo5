@@ -21,8 +21,8 @@ Q = 0.25;          % Amount of pheromone added
 
 tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Phromone
 
-alpha = 1;        % Pheromone Exponential Weight  / alpha>0
-beta = 1;         % Heuristic Exponential Weight / beta<1
+alpha = 1;        % Pheromone Exponential Weight  
+beta = 1;         % Heuristic Exponential Weight 
 
 rho = 0.5;       % Evaporation Rate  / 0<rho<1
 
