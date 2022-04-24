@@ -2,8 +2,6 @@ from solution import Solution
 import matplotlib.pyplot as plt
 import sys
 import numpy as np
-# import networkx as nx
-# import string
 
 def tabu_search(max_iter, tabu_tenure, neighbor_size=1000, init='No'):
 
@@ -39,6 +37,7 @@ def tabu_search(max_iter, tabu_tenure, neighbor_size=1000, init='No'):
         else:
             my_list.append(best_obj)
 
+    # Print the results
     print('incumbent value: ', str(best_obj))
     plt.plot(list(range(len(obj))), obj)
     plt.xlabel('Iteration No')
@@ -74,6 +73,7 @@ if __name__ == '__main__':
 
     import time
     s = time.time()
+    # Choose the parameters
     sol = tabu_search(500, 100, init='NN')
     print(sol.get_route())
     e = time.time()
