@@ -25,7 +25,6 @@ This repository contains the base structure for the Optimization and Decision pr
 |                         `pip freeze > requirements.txt`  to generate a list with the version of the 
 |                         different packages you use
 │
-├── ProjectProposal.pdf
 │
 └── code 
     │
