@@ -78,6 +78,20 @@ for s in range(n_nos-1):
     print("Tour :",tour)
     print(f"Total distance is : {total_distance}")
 
+    max_distance = max(distance_for_every_run)
     min_distance = min(distance_for_every_run)
-    starting_point = distance_for_every_run.index(min_distance)
-    print(min_distance, starting_point)
+    avg_distance = average(distance_for_every_run)
+    starting_point_max = distance_for_every_run.index(max_distance)
+    starting_point_min = distance_for_every_run.index(min_distance)
+    print(min_distance, starting_point_min)
+    print(max_distance, starting_point_max)
+    print(avg_distance)
+    
+# Calculate Standart deviation
+average = sum(distance_for_every_run)/len(distance_for_every_run)
+print('\n This is average')
+print(average)
+variation1= [ (x-average)**2 for x in distance_for_every_run ]
+variation = (sum(variation1)/len(variation1))**(1/2)
+print('\n The Standart deviation is')
+print(variation)
