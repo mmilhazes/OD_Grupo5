@@ -19,7 +19,7 @@ nAnt = 100;        % Number of Ants (Population Size)
 
 Q = 0.25;          % Amount of pheromone added
 
-tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Phromone
+tau0 = 10*Q/(nVar*mean(model.D(:)));	% Initial Pheromone
 
 alpha = 1;        % Pheromone Exponential Weight  
 beta = 1;         % Heuristic Exponential Weight 
