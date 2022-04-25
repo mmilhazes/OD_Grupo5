@@ -20,15 +20,12 @@ This repository contains the base structure for the Optimization and Decision pr
 │
 ├── references
 │
-├── requirements.txt   <- The file with instructions for reproducing the project environment (software).  
-|                         Indicates the version of  software you are using. If using Python, you can do 
-|                         `pip freeze > requirements.txt`  to generate a list with the version of the 
-|                         different packages you use
-│
 │
 └── code 
     │
-    ├── algorithms
+    ├── TabuSearch
     │
-    └──results
+    ├── NearestNeighboor
+    │
+    └──AntColonyOptimization
 ```
